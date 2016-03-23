@@ -1,46 +1,29 @@
 {
-  "name": "",
-  "version": "0.0.1",
+  "name": "protoReactJS",
+  "version": "0.0.0",
   "description": "",
-  "main": "server.js",
-  "scripts": {
-    "postinstall": "chmod +x ./postinstall.sh && ./postinstall.sh",
-    "start": "node server.js",
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/camera101/protoReactJS"
-  },
-  "author": "101",
-  "license": "101",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
+  "main": "webpack.config.js",
   "dependencies": {
-    "express": "^4.13.3",
-    "request": "^2.61.0"
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "flux": "^2.1.1",
+    "history": "^1.17.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {
-    "del": "^2.1.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-if": "^2.0.0",
-    "gulp-linker": "^0.1.7",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-ng-annotate": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.0.5",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.1",
-    "mocha": "^2.2.5",
-    "mocha-jshint": "^2.2.3",
-    "pre-commit": "^1.1.1",
-    "run-sequence": "^1.1.5",
-    "yargs": "^3.30.0"
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack-dev-server --content-base src --inline --hot"
   },
-  "pre-commit": [
-    "test"
-  ]
+  "author": "",
+  "license": "ISC"
 }

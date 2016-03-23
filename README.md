@@ -1,8 +1,12 @@
-# protoReactJS
-1. Install Node
-2. Install NPM
-3. npm install bower -g
-4. npm update
-5. bower update
+Instalation 
 
-10. npm start ( start the server on 1337 ) -> localhost:1337
+1. npm install
+
+
+Run 
+1. npm run dev
+
+
+Watch ( Rebuild of js after modification)
+
+1. webpack --watch
