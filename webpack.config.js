@@ -28,4 +28,17 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
   ],
+  devServer: {
+    port: 8081,
+    contentBase: 'src/',
+    historyApiFallback: true,
+    proxy: {
+      '/api': {
+        target: 'http://socialquiz.localhost:80/',
+        pathRewrite: {
+          '^/api' : ''
+        }
+      }
+    }
+  },
 };

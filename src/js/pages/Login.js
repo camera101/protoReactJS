@@ -1,9 +1,9 @@
 import React from "react";
 
 export default class Layout extends React.Component {
-  render() {
+  render( ) {
     return (
-      <h1> Login Page </h1>
+      <h1>Login Page</h1>
     );
   }
 }
