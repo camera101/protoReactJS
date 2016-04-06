@@ -33,10 +33,13 @@ module.exports = {
     contentBase: 'src/',
     historyApiFallback: true,
     proxy: {
-      '/api': {
-        target: 'http://socialquiz.localhost:80/',
-        pathRewrite: {
-          '^/api' : ''
+      '/api/*': {
+        target: 'http://localhost',
+        port: 80,
+        rewrite: function(req) {
+          // console.log('123');
+          req.url = req.url.replace(/^\/api/, '');
+          console.log(req.url);
         }
       }
     }
